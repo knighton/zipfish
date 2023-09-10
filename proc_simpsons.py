@@ -36,12 +36,12 @@ n2m = Counter()
 for n in s2n.values():
     n2m[n] += 1
 
-mm_nn = []
+nn_mm = []
 for n, m in n2m.items():
-    mm_nn.append((m, n))
-mm_nn.sort()
+    nn_mm.append((n, m))
+nn_mm.sort()
 
 h = 'data/simpsons_token_freq_freqs.txt'
 with open(h, 'w') as h:
-    for m, n in mm_nn:
+    for n, m in nn_mm:
         h.write(f'{m} {n}\n')
