@@ -1,0 +1,11 @@
+Dataset URL (on Kaggle):
+
+    https://www.kaggle.com/datasets/prashant111/the-simpsons-dataset
+
+We are interested in this file:
+
+    simpsons_script_lines.csv
+
+Download the dataset, then move/copy the file to:
+
+    data/simpsons_script_lines.csv
