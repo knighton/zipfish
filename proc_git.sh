@@ -7,10 +7,10 @@ find data/git/ -type f -name '*.c' -o -name '*.h' | \
     uniq -c | \
     sort -n | \
     sed 's/^ *//' > \
-    data/git_token_freqs.txt
+    data/git_tokens.txt
 
-cat data/git_token_freqs.txt | \
+cat data/git_tokens.txt | \
     cut -f1 -d' ' | \
     uniq -c | \
     sed 's/^ *//' > \
-    data/git_token_freq_freqs.txt
+    data/git_token_freqs.txt

@@ -27,7 +27,7 @@ for s, n in s2n.items():
     nn_ss.append((n, s))
 nn_ss.sort()
 
-g = 'data/simpsons_token_freqs.txt'
+g = 'data/simpsons_tokens.txt'
 with open(g, 'w') as g:
     for n, s in nn_ss:
         g.write(f'{n} {s}\n')
@@ -41,7 +41,7 @@ for n, m in n2m.items():
     nn_mm.append((n, m))
 nn_mm.sort()
 
-h = 'data/simpsons_token_freq_freqs.txt'
+h = 'data/simpsons_token_freqs.txt'
 with open(h, 'w') as h:
     for n, m in nn_mm:
         h.write(f'{m} {n}\n')
